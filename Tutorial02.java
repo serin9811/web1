@@ -7,8 +7,21 @@ package com.bit.demo;
 
 
 public class Tutorial02 {
+	public static void main (String [] args) {
+		
+		for (int m=2; m <9 ; m+=3) {
+		for (int k=1; k<=9 ; ++k) {
+			for (int i =0 ; i <=2 ; ++i){
+				int d = m + i;
+				System.out.print(d+ " x " +k+ " = " + (d*k));
+				System.out.print("\t");
+			}
+		System.out.println();
+		}
+		}
+	}
 	
-	public static void main (String[] args) {
+	public static void sample02() {
 	/*	int count = 0;
 		for(int v = 1 ; v <=25 ; v++  ) {
 		 System.out.print(v+ " ");

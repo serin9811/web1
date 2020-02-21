@@ -19,7 +19,7 @@ public class A {
 	//필드는 private, 메서드는 public
 	private int a_num ; //(default) int a_num
 	
-	public A() {} //이걸 왜 써준다고??
+	public A() {} //
 	public A(A origin) {
 		this.a_num= origin.getAnum();
 		

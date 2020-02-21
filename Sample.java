@@ -27,6 +27,22 @@ public class Sample {
 //		b.todo(new A(a)); //복사 생성자
 //		System.out.println(a.getAnum());
 		
+//		Object p1= new AdvPhone(); //object는 최상위 타입.단군할아버지급.
+		Phone p1= new AdvPhone();  //자식의 인스턴스를 부모 타입으로 받을 수 있다???
+		//부모의 인스턴스는 자식 타입으로 받을 수 없다. 범위: 자식 > 부모
+		//부모의 인스턴스는 부모 타입으로만 받을 수 있다.
+		//실 생성 타입이 무엇인지 주의할 것. 
+		p1.rcv();
+		p1.call();
+//		AdvPhone p2 = (AdvPhone)p1; //참조복사 . 형변환
+		AdvPhone p2= (AdvPhone)p1;
+		p2.setNumber("010-1234-1234");
+		p2.rcv();
+		p2.call();
+		
+		//오버라이딩... 오버로딩...
+		
+		
 	}
 	
 }
